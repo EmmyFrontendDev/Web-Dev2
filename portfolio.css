@@ -9,7 +9,12 @@
   transform: translateY(0);
 }
 .container{
-  opacity: 1;
-  transform: translateY(0);
   transition: all 0.8s ease-out;
+   opacity: 1;
+  transform: translateY(0);
+}
+
+#about{
+  background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.6));
+  color: white;
 }
