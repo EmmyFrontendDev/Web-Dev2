@@ -1,0 +1,15 @@
+.hidden-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.show-section {
+  opacity: 1;
+  transform: translateY(0);
+}
+.container{
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.8s ease-out;
+}

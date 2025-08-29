@@ -1,0 +1,564 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+     position: fixed;
+    top: 0px;
+    /* left: 0px; */
+    width: 100%;
+    z-index: 1000;
+    background-color: black;
+} 
+.container{
+    width: 100%;
+    align-items: center;
+    padding-top: 10px;
+
+}
+@media screen and (min-width:800px){
+    .mobile{
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 767px) {
+    .mobile{
+        display: block;
+    }
+   ul{
+        width: 50%;
+        padding-left: none;
+        padding-right: none;
+        
+   }
+   header .container .logo img{
+    margin-left: 60px;
+   }
+    .logo img{
+        width: 100px;
+        
+    }
+    .container{
+        width: 100%;
+        
+    }
+    #benz{
+        flex-direction: column;
+        gap: none;
+        margin: none;
+    }
+    #benz h1{
+        font-size: 2rem;
+    }
+    .bus{
+       margin-left: -50px;
+    }
+    .bus button{
+    background-color: orangered;
+    color: white;
+    font-size: 1.3rem;
+    padding: 7px 20px;
+    border: none;
+
+}
+    .gt img{
+        width: 300px;
+        margin-top: -50px;
+        margin-left: -90px;
+    }
+    #taxi{
+        flex-direction: column;
+        padding: 0px 20px;
+    }
+    #taxi .tax img{
+        width: 250px;
+        margin-left: -40px;
+    }
+    .gat{
+        margin-left: -40px;
+    }
+    #taxi .mj{
+        flex-direction: column;
+    }
+    .mj .md h2{
+    font-size: 2.5rem;
+    border-bottom: solid orangered;
+}
+    .mj .mk h2{
+    font-size: 2.5rem;
+    border-bottom: solid orangered;
+}
+    section.red .fast{
+        width: 300px;
+        margin-left: -40px;
+    }
+    section.red .fast2{
+        width: 300px;
+        margin-left: -40px;
+    }
+    section.red .fast3{
+        width: 300px;
+        margin-left: -40px;
+    }
+    #services .serve{
+        flex-direction: column;
+        padding: 0px -50px;
+    }
+    #services .serve h2 {
+        font-size: 1.5rem;
+        padding-left: 30px;
+    }
+    #services button{
+        width: 100%;
+        font-size: 1rem;
+        padding: 7px 20px;
+    }
+    .cars{
+        flex-direction: column;
+        margin-left: -47px;
+    }
+    .card2{
+        flex-direction: column;
+        margin-left: -47px;
+    }
+    .card3{
+        flex-direction: column;
+        margin-left: -47px;
+    }
+    #Tres{
+        flex-direction: column;
+    }
+    #Tres .fig{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #Tres .fig {
+        width: 300px;
+        margin-left: -20px;
+    }
+    #Tres .tt h2{
+        font-size: 1.8rem;
+        padding-right: 40px;
+
+    }
+    .rec{
+        flex-direction: column;
+    }
+    #review .rec h2{
+        font-size: 1.6rem;
+        padding-left: 30px;
+        padding-bottom: 20px;
+    }
+    #review .rec .h {
+        margin-left: 30px;
+    }
+    #review .big{
+        flex-direction: column;
+        padding: 0px -70px;
+
+    }
+    #review .big .fg{
+        width: 300px;
+        margin-left: -67px;
+    }
+    #footer .abb{
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 30px;
+    }
+    #footer .abb .services{
+        display: none;
+    }
+    #footer .jkl{
+        font-size: 1rem;
+        padding: -10px;
+    }
+    
+}
+ul{
+    list-style: none;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 13px;
+    font-weight: 500;
+    align-items: center;
+
+}
+a:hover{
+    color: orangered;
+    transition-duration: 0.7s;
+}
+#rex{
+   background: linear-gradient(rgb(0, 0, 0), rgba(0,0,0,0.6));
+    padding-bottom: 50px;
+
+    
+}
+
+.container button{
+    background-color: black;
+    border: 1px solid orangered;
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    padding: 9px 20px;
+
+}
+#benz{
+    margin: 100px 0px ;
+    padding: 0px 70px;
+/* animation: slideInBottom 1s ease-out forwards; */
+  display: flex;
+  gap: 60px;
+}
+
+.bus{
+    margin-top: 150px;
+    animation: slideInBottom 1s ease-out forwards;
+    
+   
+}
+/* Slide from Bottom */
+@keyframes slideInBottom {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.gt{
+    margin-top: 100px;
+  animation: slideInleft 1s ease-out forwards;
+}
+  /* Slide from right */
+@keyframes slideInleft {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+  
+#benz h1{
+    font-size: 4rem;
+    color: white;
+
+}
+#benz p{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+#benz button{
+    background-color: orangered;
+    color: white;
+    font-size: 1.3rem;
+    padding: 15px 40px;
+    border: none;
+
+}
+#benz button:hover{
+     background-color: rgb(0, 0, 0);
+    color: orangered;
+    transition-duration: 0.5s;
+    font-size: 1.3rem;
+    padding: 15px 40px;
+    border: none;
+}
+#taxi{
+    display: flex;
+    padding: 70px ;
+    gap: 50px;
+    background-color: black;
+    color: white;
+}
+.tax{
+     animation: slideInBottom 1s ease-out forwards;
+}
+/* Slide from Bottom */
+@keyframes slideInBottom {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.mj{
+    display: flex;
+    gap: 40px;
+}
+.gat{
+    
+}
+.gat h2{
+    font-size: 3rem;
+}
+
+.md h2{
+    font-size: 4.5rem;
+    border-bottom: solid orangered;
+}
+.mk h2{
+    font-size: 4.5rem;
+    border-bottom: solid orangered;
+}
+#services{
+    background-color: rgba(0, 0, 0, 0.959);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.serve{
+    display: flex ;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding: 0px -70px;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.serve h2{
+    color: white;
+    font-size: 3rem;
+}
+.serve button{
+    background-color: orangered;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 15px 40px;
+    border: none;
+}
+.serve button:hover{
+    background-color: rgb(0, 0, 0);
+    color: orangered;
+    transition-duration: 0.5s;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 15px 40px;
+    border: none;
+
+}
+.cars {
+    display: flex;
+    gap: 40px;
+    color: rgba(255, 255, 255, 0.836);
+    padding: 0px 70px;
+    padding: 40px;
+}
+.fast{
+    background-color: rgba(0, 0, 0, 0.945);
+    padding: 40px;
+}
+.fast:hover{
+    box-shadow: 0px 10px 25px solid  rgba(255, 255, 255, 0.836);
+}
+.fast button:hover{
+    transition-duration: 0.5s;
+    color: orangered;
+}
+.fast2{
+    background-color: rgba(0, 0, 0, 0.945);
+    padding: 40px;
+}
+.fast2 button:hover{
+    transition-duration: 0.5s;
+    color: orangered;
+}
+.fast3{
+    background-color: rgba(0, 0, 0, 0.945);
+    padding: 40px;
+}
+.fast3 button:hover{
+    transition-duration: 0.5s;
+    color: orangered;
+}
+.cars p{
+    border-bottom: 0.01px solid rgba(184, 184, 184, 0.849);
+    padding-bottom: 30px;
+}
+.cars button{
+    border: none;
+    background-color: black;
+    color: white;
+}
+.card2 {
+    display: flex;
+    gap: 60px;
+    justify-content: space-around;
+    color: rgba(255, 255, 255, 0.836);
+    padding: 40px;
+}
+.card2 p{
+    border-bottom: 0.01px solid rgba(184, 184, 184, 0.849);
+    padding-bottom: 30px;
+}
+.card2 button{
+    border: none;
+    background-color: black;
+    color: white;
+}
+.card3 {
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+    color: rgba(255, 255, 255, 0.842);
+    padding: 40px;
+}
+.card3 p{
+    border-bottom: 0.01px solid rgba(184, 184, 184, 0.849);
+    padding-bottom: 30px;
+}
+.card3 button{
+    border: none;
+   background-color: black;
+   color: white;
+}
+#Tres{
+    background-color: rgba(0, 0, 0, 0.945);
+    padding: 30px;
+}
+#Tres  h2{
+    font-size: 3rem;
+    text-align: center;
+    color: rgba(245, 245, 245, 0.911);
+    padding-left: 40px;
+}
+.fig{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    padding-top: 30px;
+    
+}
+.fig img{
+    border: 0.01px solid rgba(255, 255, 255, 0.171);
+    padding: 30px;
+    width: 250px;
+    margin-left: 20px;
+}
+#review{
+    background-color: rgba(0, 0, 0, 0.945);
+    
+}
+.rec{
+     display: flex ;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    justify-content: space-evenly;
+}
+.rec h2{
+    font-size: 3rem;
+    color: whitesmoke;
+}
+.rec button{
+    background-color: rgba(0, 0, 0, 0.945);
+    border: 1px solid orangered;
+    font-size: 3rem;
+    color: white;
+    padding: 0px 40px;
+    text-align: center;
+}
+.h{
+    display: flex;
+    gap: 40px;
+    
+}
+.big{
+    display: flex;
+    color: rgba(245, 245, 245, 0.911);
+    gap: 40px;
+    padding: 0px 70px;
+    padding-bottom: 50px;
+
+}
+.fg{
+    background-color: black;
+    padding: 50px;
+
+}
+.fg h2{
+    display: flex;
+}
+.df{
+    display: flex;
+}
+.df h1{
+    color: orangered;
+    padding-right: 10px;
+}
+.df h2{
+    font-size: 1.3rem;
+}
+footer{
+    background-color:rgba(0, 0, 0, 0.945) ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 70px;
+    color: rgba(245, 245, 245, 0.911);
+    border-top: 0.01px solid rgba(190, 188, 188, 0.747);
+}
+.abb{
+    justify-content: center;
+    padding-bottom: 50px;
+    display: flex;
+    gap: 60px;
+    color:rgba(245, 245, 245, 0.911) ;
+}
+.em h2{
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.em h4{
+    font-size: 0.96rem;
+    font-weight: 400;
+}
+.em h1{
+    font-size: 1.7rem;
+}
+.gig a{
+    padding-bottom: 20px;
+    padding-right: 10px;
+}
+.connect form{
+    padding-left: 10px;
+    padding-top: 20px;
+}
+.connect form input{
+    padding: 7px 23px;
+
+}
+.connect button{
+    padding: 7px 23px;
+    margin-left: -90px;
+    border: none;
+    background-color: black;
+    color: whitesmoke;
+    outline: none;
+}
+.connect button:hover{
+    color: black;
+    background-color: orangered;
+    transition-duration: 0.5s;
+}
+.jkl{
+    text-align: center;
+    background-color:rgba(0, 0, 0, 0.945) ;
+    padding: 20px;
+    font-size: 1.3rem;
+}
