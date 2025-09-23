@@ -6,7 +6,7 @@
 }
 
 header{
-     position: fixed;
+     position: sticky;
     top: 0px;
     /* left: 0px; */
     width: 100%;
@@ -19,6 +19,20 @@ header{
     padding-top: 10px;
 
 }
+.benz {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.benz2 {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* navbar */
+.navbar-nav{
+    padding-right: -70px !important;
+}
 @media screen and (min-width:800px){
     .mobile{
         display: none;
@@ -30,10 +44,13 @@ header{
         display: block;
     }
    ul{
-        width: 50%;
-        padding-left: none;
-        padding-right: none;
+        width: 100%;
         
+       
+        
+   }
+   .navbar-nav a{
+    margin: 5px !important;
    }
    header .container .logo img{
     margin-left: 60px;
@@ -49,7 +66,7 @@ header{
     #benz{
         flex-direction: column;
         gap: none;
-        margin: none;
+        margin-top:-50px !important ;
     }
     #benz h1{
         font-size: 2rem;
@@ -66,7 +83,7 @@ header{
 
 }
     .gt img{
-        width: 300px;
+        width: 350px;
         margin-top: -50px;
         margin-left: -90px;
     }
@@ -75,7 +92,7 @@ header{
         padding: 0px 20px;
     }
     #taxi .tax img{
-        width: 250px;
+        width: 315px;
         margin-left: -40px;
     }
     .gat{
@@ -93,16 +110,16 @@ header{
     border-bottom: solid orangered;
 }
     section.red .fast{
-        width: 300px;
-        margin-left: -40px;
+        width: 315px;
+        margin-left: -55px;
     }
     section.red .fast2{
-        width: 300px;
-        margin-left: -40px;
+        width: 315px;
+        margin-left: -55px;
     }
     section.red .fast3{
-        width: 300px;
-        margin-left: -40px;
+        width: 315px;
+        margin-left: -55px;
     }
     #services .serve{
         flex-direction: column;
@@ -110,7 +127,7 @@ header{
     }
     #services .serve h2 {
         font-size: 1.5rem;
-        padding-left: 30px;
+        padding-left: 50px;
     }
     #services button{
         width: 100%;
@@ -119,15 +136,15 @@ header{
     }
     .cars{
         flex-direction: column;
-        margin-left: -47px;
+        margin-left: -px;
     }
     .card2{
         flex-direction: column;
-        margin-left: -47px;
+        margin-left: -px;
     }
     .card3{
         flex-direction: column;
-        margin-left: -47px;
+        margin-left: -0px;
     }
     #Tres{
         flex-direction: column;
@@ -138,11 +155,11 @@ header{
     }
     #Tres .fig {
         width: 300px;
-        margin-left: -20px;
+        margin-left: 10px;
     }
     #Tres .tt h2{
         font-size: 1.8rem;
-        padding-right: 40px;
+        padding-right: 50px;
 
     }
     .rec{
@@ -154,7 +171,7 @@ header{
         padding-bottom: 20px;
     }
     #review .rec .h {
-        margin-left: 30px;
+        margin-left: 50px;
     }
     #review .big{
         flex-direction: column;
@@ -163,7 +180,7 @@ header{
     }
     #review .big .fg{
         width: 300px;
-        margin-left: -67px;
+        margin-left: -30px;
     }
     #footer .abb{
         flex-direction: column;
@@ -181,7 +198,7 @@ header{
 }
 ul{
     list-style: none;
-    align-items: center;
+    /* align-items: center; */
 }
 a{
     text-decoration: none;
@@ -219,17 +236,62 @@ a:hover{
   gap: 60px;
 }
 
-.bus{
+.bus h1{
     margin-top: 150px;
     animation: slideInBottom 1s ease-out forwards;
+    animation-duration: 1.5s;
+    
     
    
+}
+
+
+.navbar-toggler-icon{
+    /* border: 1px solid orangered !important; */
+    padding: 10px !important;
+    
+    
 }
 /* Slide from Bottom */
 @keyframes slideInBottom {
   from {
     transform: translateX(-100%);
     opacity: 0;
+    
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.bus p{
+    animation: slideInright 2s ease-out forwards;
+    animation-duration: 2s;
+    
+}
+/* Slide from right*/
+@keyframes slideInright {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+    
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.bus button{
+     animation: slideInBottom 3s ease-out forwards;
+    animation-duration: 2s;
+    
+}
+/* Slide from Bottom */
+@keyframes slideInBottom {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+    
   }
   to {
     transform: translateX(0);
@@ -239,6 +301,7 @@ a:hover{
 .gt{
     margin-top: 100px;
   animation: slideInleft 1s ease-out forwards;
+   animation-duration: 1.5s;
 }
   /* Slide from right */
 @keyframes slideInleft {
@@ -287,6 +350,7 @@ a:hover{
 }
 .tax{
      animation: slideInBottom 1s ease-out forwards;
+      animation-duration: 1.8s;
 }
 /* Slide from Bottom */
 @keyframes slideInBottom {
@@ -304,8 +368,22 @@ a:hover{
     gap: 40px;
 }
 .gat{
-    
+
+  animation: slideInleft 1s ease-out forwards;
+   animation-duration: 1.8s;
 }
+  /* Slide from right */
+@keyframes slideInleft {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .gat h2{
     font-size: 3rem;
 }

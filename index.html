@@ -7,9 +7,11 @@
     <meta name="description" content="What this website is all about">
     <meta name="description" content="">
     <link rel="shortcut icon" href="images/logo5.png" type="image/x-icon">
-    <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/all.min.css">
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
     
 </head>
 <body>
@@ -19,19 +21,19 @@
         <div class="container">
              <nav class="navbar navbar-expand-lg navbar-light bg-light px-4 " style="background-color: black !important; "  >
          <div class="logo" style="margin-left: -70px;">
-                <img src="/images/logo5.png" alt="">
+                <img src="images/logo5.png" alt="">
             </div>
             <!-- toogle button -->
 
           <button class="navbar-toggler" type="button"                data-bs-toggle="collapse"
             data-bs-target="#navbarContent"   aria-controls="navbarContent"
             aria-expanded="false" aria-label="Toggle navigation">
-           <span class="navbar-toggler-icon" style="color: white !important;"></span>
+           <span class="navbar-toggler-icon " ></span>
          </button>
 
   <div class="collapse navbar-collapse " id="navbarContent" >
     <!-- Navigation links -->
-    <ul class="navbar-nav me-auto ms-3" style="padding: 0px 70px !important; justify-content: center !important;">
+    <ul class="navbar-nav me-auto ms-3"  >
       <li class="nav-item">
         <a class="nav-link active" aria-current="page" href="index.html" style="color: white !important;">Home</a>
       </li>
@@ -57,7 +59,7 @@
 </nav>
         </div>
      </header>
-     <section id="benz">
+     <section id="benz" >
         <div class="bus" >
             <h1>Luxury on the Move</h1>
         <p>Premium cars, courteous drivers___ride with elegance and <br>
@@ -66,14 +68,14 @@
         <button>Book Online</button>
         </div>
         <div class="gt">
-            <img src="/images/2021_Mazda6_Updated_With_New_Carbon_Edition__Wireless_Apple_CarPlay___Carscoops-removebg-preview.png" alt="">
+            <img src="images/2021_Mazda6_Updated_With_New_Carbon_Edition__Wireless_Apple_CarPlay___Carscoops-removebg-preview.png" alt="">
         </div>
      </section>
     </section>
     
-     <section id="taxi">
-        <div class="tax">
-            <img src="/images/benz.png" alt="">
+     <section id="taxi" class="benz">
+        <div class="tax" >
+            <img src="images/benz.png" alt="">
         </div>
         <div class="gat">
             <h2>About Us</h2>
@@ -102,7 +104,7 @@
      <section id="services" class="red">
         <div class="serve">
             <h2>Our Services</h2>
-            <button style="margin-left: -30px;">BOOK ONLINE</button>
+            <button style="margin-left: -15px;">BOOK ONLINE</button>
         </div>
         <div class="cars">
             <div class="fast">
@@ -170,15 +172,15 @@
         </div>
         
         <div class="fig">
-            <img src="/images/jaguar.png" alt="">
-            <img src="/images/dodge.png" alt="">
-            <img src="/images/ford.png" alt="">
-            <img src="/images/toyota.png" alt="">
-            <img src="/images/honda.png" alt="">
+            <img src="images/jaguar.png" alt="">
+            <img src="images/dodge.png" alt="">
+            <img src="images/ford.png" alt="">
+            <img src="images/toyota.png" alt="">
+            <img src="images/honda.png" alt="">
         </div>
 
      </section>
-t      <section id="review">
+      <section id="review">
         <div class="rec">
             <h2>RECENT REVIEW & RATING</h2>
             <div class="h">
@@ -221,7 +223,7 @@ t      <section id="review">
         <div class="abb">
             <div class="em">
               <div class="logo">
-                <img src="/images/logo5.png" alt="">
+                <img src="images/logo5.png" alt="">
               </div>
               <h2>Driven by Excellence, Defined by <br>Elegance.</h2>
               <h4>Support center 24/7</h4>
@@ -265,11 +267,28 @@ t      <section id="review">
        
      </footer>
      </section>
-     
+        <script>
+            const sections = document.querySelectorAll('.benz');
+
+    const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+        entry.target.classList.add('benz2');
+        // Optional: stop observing once animated
+        observer.unobserve(entry.target);
+        }
+    });
+    }, { threshold: 0.2 }); // 0.2 = trigger when 20% is visible
+
+    sections.forEach(section => {
+    observer.observe(section);
+    });
+
+        </script>
+        
+
+
     
-
-
-
 
 
 
